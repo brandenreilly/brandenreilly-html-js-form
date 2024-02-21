@@ -1,1 +1,49 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: gray;
+}
+form {
+  background-color: white;
+}
+
+fieldset {
+  margin: 0;
+  border-radius: 6px;
+  background-color: gray;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline;
+}
+label[for="inputMastercard"],
+label[for="inputVisa"],
+label[for="inputDiners"],
+label[for="inputAmex"] {
+  margin-right: 20px;
+}
+.AddNotes {
+  color: gray;
+}
+form {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+form header {
+  border-bottom: 1px solid lightgray;
+  /* padding-left: 10px !important; */
+  margin: 10px 0px !important;
+}
+form footer {
+  border-top: 1px solid lightgray;
+  padding: 8px;
+}
+.alert {
+  margin-top: 10px;
+}
