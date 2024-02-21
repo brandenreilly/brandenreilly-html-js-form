@@ -25,18 +25,15 @@
               class="alert alert-danger d-none"
               id="missingFields"
               role="alert"
-            >
-              Some fields are missing
-            </div>
+            ></div>
             <div class="col-md-4">
               <label for="inputCard" class="form-label">Card #</label>
               <input
                 type="tel"
                 inputmode="numeric"
-                class="form-control"
+                class="inputCard form-control"
                 id="inputCard"
                 pattern="[0-9]{16}"
-                required
                 placeholder="XXXX-XXXX-XXXX-XXXX"
                 autocomplete="cc-number"
                 maxlength="16"
@@ -87,7 +84,7 @@
               <label for="inputlName" class="form-label">Last Name</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control "
                 id="inputlName"
                 placeholder="Doe"
                 required
@@ -97,7 +94,7 @@
               <label for="inputCity" class="form-label">City</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control "
                 id="inputCity"
                 placeholder="Las Vegas"
                 required
@@ -106,7 +103,7 @@
             <div class="col-md-3">
               <label for="inputState" class="form-label">State</label>
               <select id="inputState" class="form-select" required>
-                <option value="">Pick a state</option>
+                <option value="statePlaceHolder">Pick a state</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -224,7 +221,12 @@
             </div>
             <div class="col-6">
               <label for="inputMessage" class="form-label">Message</label><br />
-              <textarea class="form-control" rows="3" required></textarea>
+              <textarea
+                class="form-control"
+                id="msg"
+                rows="3"
+                required
+              ></textarea>
               <p class="AddNotes">Add any notes here.</p>
             </div>
           </div>

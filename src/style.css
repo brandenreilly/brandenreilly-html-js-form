@@ -47,3 +47,6 @@ form footer {
 .alert {
   margin-top: 10px;
 }
+.warningMissing {
+  color: red;
+}
